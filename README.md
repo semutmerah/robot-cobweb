@@ -1,7 +1,7 @@
 # robot-cobweb
 Robot Cobweb is a docker image built solution to be used for E2E web testing (desktop/mobile) with Robot Framework and Selenium Library. This image is built based on latest Ubuntu LTS 18.04, and lightweight Openbox window manager.
 
-![Robot Cobweb in action](https://i.imgur.com/74610bz.gif)
+![Robot Cobweb in action](https://i.imgur.com/43hBBfZ.gif)
 
 ## Purposes
 1. Run UI tests for web (desktop/mobile) with Robot Framework + Selenium Library in local machine
