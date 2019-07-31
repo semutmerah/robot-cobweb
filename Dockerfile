@@ -55,11 +55,11 @@ WORKDIR /root
 # libgconf2-4
 # wget
 #==================
-ARG CHROMIUM_VERSION=70.0.3538.77-0ubuntu0.18.04.1
-ARG FIREFOX_VERSION=63.0+build2-0ubuntu0.18.04.2
-ENV DEBIAN_FRONTEND=noninteractive \
-    CHROMIUM_VERSION=$CHROMIUM_VERSION \
-    FIREFOX_VERSION=$FIREFOX_VERSION
+# ARG CHROMIUM_VERSION=70.0.3538.77-0ubuntu0.18.04.1
+# ARG FIREFOX_VERSION=63.0+build2-0ubuntu0.18.04.2
+# ENV DEBIAN_FRONTEND=noninteractive \
+#     CHROMIUM_VERSION=$CHROMIUM_VERSION \
+#     FIREFOX_VERSION=$FIREFOX_VERSION
 
 RUN apt-get -qqy update && apt-get -qqy upgrade && apt-get -qqy install --no-install-recommends \
     supervisor \
@@ -69,10 +69,8 @@ RUN apt-get -qqy update && apt-get -qqy upgrade && apt-get -qqy install --no-ins
     menu \
     python-numpy \
     net-tools \
-    chromium-browser=${CHROMIUM_VERSION} \
-    chromium-browser-l10n=${CHROMIUM_VERSION} \
-    chromium-codecs-ffmpeg=${CHROMIUM_VERSION} \
-    firefox=${FIREFOX_VERSION} \
+    chromium-browser \
+    firefox \
     software-properties-common \
     python3-setuptools \
     python3-pip \
